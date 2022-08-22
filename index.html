@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button onclick="popup.style.display = 'block' " class="btn-login">Login</button>
+    <div class="extern" style="display:none">
+        <section class="login-container">
+            <button class="close" onclick="hidePopup()">X</button>
+            <div class=" profile">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="">
+            </div>
+
+            <form action="" method="POST">
+                <label>Email
+                    <input type="email" name="email" placeholder="Digite seu email">
+                </label>
+
+                <label>Password
+                    <input type="password" name="pass" placeholder="Digite a senha">
+                </label>
+
+                <input type="submit" value="Login" class="btn-submit">
+
+                <label class="label-chk">
+                    <input type="checkbox" checked> Lembrar-me
+                </label>
+            </form>
+
+            <div class="down-side">
+                <button onclick="hidePopup()">Cancel</button>
+                <p>Esqueceu sua <a href="#">senha?</a></p>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
